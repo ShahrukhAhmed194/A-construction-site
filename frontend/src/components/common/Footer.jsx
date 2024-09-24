@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-3">
                         <h3 className="mb-3">Divine Construction</h3>
-                        <div className="pe-5">
+                        <div className="pe-5 pt-2">
                             <p>standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum</p>
                         </div>
                     </div>
