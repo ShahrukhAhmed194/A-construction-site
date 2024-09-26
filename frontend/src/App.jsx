@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/frontend/Home';
 import About from './components/frontend/About';
 import Services from './components/frontend/Services';
+import Projects from './components/frontend/Projects';
+import Blogs from './components/frontend/Blogs';
 import './assets/css/style.scss';
 
 
@@ -18,6 +20,8 @@ function App() {
         <Route path='/' element= {<Home/>} />
         <Route path='/about' element={<About />}></Route>
         <Route path='/services' element={<Services />}></Route>
+        <Route path='/projects' element={<Projects />}></Route>
+        <Route path='/blogs' element={<Blogs />}></Route>
       </Routes>
     </BrowserRouter>
     </>
