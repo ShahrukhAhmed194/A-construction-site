@@ -14,7 +14,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import About from "../common/About";
 
-export const Home = () => {
+const Home = () => {
     return (
     <>
     <Header />

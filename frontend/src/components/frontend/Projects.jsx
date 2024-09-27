@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Hero from '../common/Hero';
 import ConstructionImg from "../../assets/images/construction2.jpg";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <>
       <Header />
@@ -126,3 +126,5 @@ export default function Projects() {
     </>
   )
 }
+
+export default Projects;
