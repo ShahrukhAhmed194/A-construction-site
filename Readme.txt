@@ -1,5 +1,5 @@
-Recording 7 : 0 min
-https://www.youtube.com/watch?v=Pcp80SMw414&t=20s&ab_channel=PHPTECHLIFE
+Recording 8 : 0 min
+https://www.youtube.com/watch?v=tMr6E4uLOa8&t=73s&ab_channel=PHPTECHLIFE
 
 React Router:
 npm i react-router-dom
