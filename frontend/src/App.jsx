@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/frontend/Home';
@@ -9,8 +6,11 @@ import Services from './components/frontend/Services';
 import Projects from './components/frontend/Projects';
 import Blogs from './components/frontend/Blogs';
 import ContactUs from './components/frontend/ContactUs';
+import Login from './components/backend/Login';
+import Dashboard from './components/backend/Dashboard';
+import { ToastContainer, toast } from 'react-toastify';
 import './assets/css/style.scss';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -24,10 +24,13 @@ function App() {
         <Route path='/projects' element={<Projects />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/contact' element={<ContactUs />}></Route>
+        <Route path='/admin/login' element={<Login />}></Route>
+        <Route path='/admin/dashboard' element={<Dashboard />}></Route>
       </Routes>
     </BrowserRouter>
+    <ToastContainer />
     </>
   )
 }
 
-export default App
+export default App;

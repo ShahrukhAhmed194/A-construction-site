@@ -1,5 +1,5 @@
-Recording 8 : 0 min
-https://www.youtube.com/watch?v=tMr6E4uLOa8&t=73s&ab_channel=PHPTECHLIFE
+Recording 10 : 0 min
+https://www.youtube.com/watch?v=pKWo8uKkphg&ab_channel=PHPTECHLIFE
 
 React Router:
 npm i react-router-dom
@@ -19,3 +19,14 @@ npm i swiper
 
 Icons: 
 https://icons.getbootstrap.com/
+
+Laravel Sanctum:
+php artisan install:api
+
+React Form Validation:
+https://www.react-hook-form.com/get-started
+npm install react-hook-form
+
+React Tostify:
+https://www.npmjs.com/package/react-toastify
+npm i react-toastify
