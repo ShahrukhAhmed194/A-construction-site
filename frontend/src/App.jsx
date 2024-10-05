@@ -11,6 +11,7 @@ import Dashboard from './components/backend/Dashboard';
 import { ToastContainer, toast } from 'react-toastify';
 import './assets/css/style.scss';
 import 'react-toastify/dist/ReactToastify.css';
+import RequireAuth from './components/common/RequireAuth';
 
 function App() {
 
@@ -19,13 +20,17 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element= {<Home/>} />
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/services' element={<Services />}></Route>
-        <Route path='/projects' element={<Projects />}></Route>
-        <Route path='/blogs' element={<Blogs />}></Route>
-        <Route path='/contact' element={<ContactUs />}></Route>
-        <Route path='/admin/login' element={<Login />}></Route>
-        <Route path='/admin/dashboard' element={<Dashboard />}></Route>
+        <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/contact' element={<ContactUs />} />
+        <Route path='/admin/login' element={<Login />} />
+        <Route path='/admin/dashboard' element={
+            <RequireAuth >
+              <Dashboard />
+            </RequireAuth>
+        } />
       </Routes>
     </BrowserRouter>
     <ToastContainer />

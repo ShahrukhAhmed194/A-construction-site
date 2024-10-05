@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from './context/Auth';
 
 const Login = () => {
+  const {login} = useContext(AuthContext);
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
-    // console.log(data);
+
     const res = await fetch('http://127.0.0.1:8000/api/authenticate', {
         method : 'POST',
         headers: {
@@ -30,6 +32,7 @@ const Login = () => {
         }
         
         localStorage.setItem('userInfo', JSON.stringify(userInfo));
+        login(userInfo);
         navigate('/admin/dashboard');
     }
   }
